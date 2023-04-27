@@ -1,12 +1,12 @@
 @charset "UTF8";
-.inicio{ 
-    margin-top: 20px;
-    color: rgb(0, 0, 77);
-    font-size: 30px;
-    font-weight: bolder; 
-}
+@import url("CSS/reset.css");
+@import url("CSS/index.css");
+@import url("CSS/faleconosco.css");
+@import url("CSS/dicasagricolas.css");
+@import url("CSS/servicosprestados.css");
+
 header{
-    background-image: linear-gradient(to bottom,rgba(136, 15, 250, 0.973),rgba(255, 117, 4, 0.979));
+    background-image: linear-gradient(to bottom,rgba(136, 15, 250, 0.973),rgba(255, 117, 4, 0.979), rgba(255,255,255));
     padding: 1px;
     margin: -10px;
     text-align: center;
@@ -14,71 +14,108 @@ header{
     top: 0; 
     width: 105%;           
 }
+
+.cab{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+.container {
+    display: flex;   
+}
+
+.span{
+    font-weight: bold;
+    color: rgb(0, 0, 77);
+}
+
+.container__cabeçalho {
+    background-color: var(--branco);
+    display: inline;
+    justify-content: space-between;
+    
+    position: relative;
+    width: 100vw;
+}
+
+.lista-menu {
+    display: none;
+    position: relative;
+    left: 60%;
+    width: 20vw;
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: auto;
+    background: white;
+    text-decoration: none;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: unset;
+    background-clip: text;
+    text-decoration: none;
+}
+
+.container__botao {
+    display: none;
+}
+
 a{
     text-decoration: none;
     color: rgb(0, 0, 77);
     font-weight: bolder;
 }
 a:visited{
-    color: rgb(0, 0, 77);
+    color: rgb(0, 0, 0);
 }
-a:hover{
-    color: black;
-    text-decoration: underline;
-}    
+
+a:hover {
+    color: rgb(11, 185, 229);    
+}   
+
 a:active{
     color: green;
+    text-decoration: none;
 }
-main{
-    margin-top: 235px;
-}
-.main{
-    margin-top: 185px;
-}
-.input-padrao {
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
-}
-.checkbox {
-    margin: 20px;
-}
-.enviar {
-    width: 40%;
-    padding: 15px 0px;
-    background: orange;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;    
-    transition: 2s all;
-    cursor: pointer;
-}
-.mediasocial{
-    margin-top: 25px;   
-}
+
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     width: 100%;
     line-height: 100%;
     text-align: center;  
     background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.795),rgb(94, 233, 94));
 }
-.foo{   
-    position: relative;
+
+.pe{ 
+    margin-top: -0.5vh;
 }
-.pe{
-    margin-top: 40px;
-}
+
 .imgrodape{
-    width: 30px;
+    width: 4vh;;
 }
+
 .copyr {
     color: black;
-    font-size: 13px;
-    margin-top: 5px;
+    font-size: 1.7vh;
+    font-weight: bold;
     text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+.menu{
+    margin: 1.5vh auto 0;
+}
+
+}
+
+@media screen and (min-width: 1728px) {
+
 }

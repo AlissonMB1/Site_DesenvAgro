@@ -6,20 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Imagem/favicon-16x16.png" type="image/x-icon">
     <title>Fale Conosco</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/faleconosco.css">
 </head>
 <body>
     <header>
         <p><img src="Imagem/Desenvagro-400l.png" alt="imagem DesenvAgro">
         </p>             
-        <strong><nav><a href="index.html">DesenvAgro</a>&nbsp; &nbsp; &nbsp;     
-            <a href="serviçosprestados.html">Serviços prestados</a>&nbsp; &nbsp; &nbsp;
-            <a href="dicasagricolas.html">Dicas agrícolas</a>&nbsp; &nbsp; &nbsp;
-            <a href="faleconosco.html">Fale Conosco</a></nav></strong>
+        <div>
+            <ul class="cab">
+             <li class="menu">
+                <a href="index.html">Início</a>
+            </li>  
+             <li class="menu">
+                <a href="serviçosprestados.html">Serviços prestados</a>
+            </li> 
+             <li class="menu">
+            <div class="container cabeçalho">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu">
+                    <span class="span">Dicas agrícolas</span>
+                </label>
+                <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Gestão</a>
+                </li>
+                <li>
+                <a href="#" class="lista-menu__link">Solo</a>
+                </li>
+                </ul>                      
+            </div>   
+             </li>
+             <li class="menu"><a href="faleconosco.html">Fale Conosco</a></li>
+            </ul>        
+        </div>
             
     </header>
-    <main class="main">
+    <main class="texto">
         <form class="dados"> 
             <label for="nomeesobrenome">Nome e sobrenome:</label>  
             <input type="text" id="nomeesobrenome" class="input-padrao" required><br>
@@ -32,8 +56,8 @@
 
             <label for="mensagem">Mensagem:</label>
             <textarea name="mensagem" id="Mensagem" cols="30" rows="10" class="input-padrao" required></textarea>
-
-            <fieldset>
+            <div class="legend">
+                <fieldset>
                <legend>Como prefere o nosso contato?</legend>
 
                 <label for="radio-email"><input type="radio" name="contato" value="radio-email">E-mail:</label>
@@ -41,7 +65,10 @@
                 <label for="radio-telefone"><input type="radio" name="contato" value="radio-telefone">Telefone:</label>
                 
                 <label for="radio-WhatsApp"> <input type="radio" name="contato" value="radio-whatsapp" checked>WhatsApp</label>                         
-            </fieldset>        
+            </fieldset>
+            </div>
+            
+            <div class="legend"> 
             <fieldset>
                 <legend>Qual horário prefere ser atendido?</legend>
                 <select name="" id="">
@@ -50,18 +77,34 @@
                     <option value="noite">Noite</option>
                 </select>
             </fieldset> 
-
-            <label class="checkbox" for="novidade"><input type="checkbox" checked> Gostaria de receber as nossas novidasdes por e-mail?</label> <br>
-
-            <input type="submit" value="ENviar isso aí" class="enviar"> 
+            </div>        
+            
+            <div class="marcador"> 
+                <label class="checkbox"for="novidade"><input type="checkbox" checked> Gostaria de receber as nossas novidasdes por e-mail?</label>
+            </div> 
+            <input type="submit" value="Enviar" class="enviar">
+            
 
         </form>
-        <div class="mediasocial">
-            <p>Sigam-nos nas nossas redes sociais!:</p>
-            <p>&bull;<a href="https://www.instagram.com/alissonchuleta/?" target="blanck" rel="external"><img class="ab" src="Imagem/instagram1.png" alt="imagem instagram"></a>- Dá essa moral lá no Instagram.
-            <br>&bull; <a href="https://br.linkedin.com/" target="blanck" rel="external"><img class="ab" src="Imagem/linked-in1.png" alt="imagem linkedin"></a> - Me ajude no linkedin.
-            <!--<br>&bull;<img class="ab" src="Imagem/youtube1.png" alt="imagem youtube"> <a href="https://www.youtube.com/?gl=BR&hl=pt" target="blanck" rel="external"> https://www.youtube.com/?gl=BR&hl=pt</a> - Me acompanhe no Youtube. -->> 
-            <br>&bull; <a href="https://web.whatsapp.com/ " target="blanck" rel="external"><img class="ab" src="Imagem/zap1.png" alt="imagem whatszap"></a>- Bora trocar uma idéia no zap zap.<br></p>
+        <div>
+            <p class="term">Sigam-nos nas nossas redes sociais:</p>
+            <p class="term"> &bull;
+                <a href="https://www.instagram.com/alissonchuleta/?" target="blanck" rel="external">
+                <img class="ab" src="Imagem/instagram1.png" alt="imagem instagram">
+                </a>- Dá essa moral lá no Instagram.
+            </p>            
+            <p class="term"> &bull; 
+                <a href="https://br.linkedin.com/" target="blanck" rel="external">
+                <img class="ab" src="Imagem/linked-in1.png" alt="imagem linkedin"></a> - Me ajude no linkedin.
+            </p>
+            <!--
+            <p class="term">&bull;
+                    <img class="ab" src="Imagem/youtube1.png" alt="imagem youtube"> <a href="https://www.youtube.com/?gl=BR&hl=pt" target="blanck" rel="external"> https://www.youtube.com/?gl=BR&hl=pt</a> - Me acompanhe no Youtube. 
+             </p>-->
+             <p class="term"> &bull; 
+                <a href="https://web.whatsapp.com/ " target="blanck" rel="external">
+                <img class="ab" src="Imagem/zap1.png" alt="imagem whatszap"></a>- Bora trocar uma idéia no zap zap.
+            </p>
         </div>            
     </main>
     <footer class="foo">

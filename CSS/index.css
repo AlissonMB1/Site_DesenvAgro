@@ -1,0 +1,36 @@
+.inicio{ 
+   margin-top: 1.5vh;
+   color: rgb(0, 0, 77);
+   font-size: 30px;
+   font-weight: bolder; 
+}
+
+.text{
+   margin-top: 23vh;
+}
+
+.img-index{
+   width: 25%;
+   margin: 0.5vh 0vh 0.5vh 1vh;
+}
+
+.index{
+   display: flex;
+   margin: 3vh 0;
+}
+
+.index_texto{
+   margin: auto 1vh auto 2vh;
+}
+.img-indexz{
+   width: 20%;
+   margin: 0.5vh 0vh 0.5vh 1vh;
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1728px) {
+
+}

@@ -8,28 +8,65 @@
     <title>Serviços Prestados</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/servicosprestados.css">
 </head>
 <body>
     <header>
-        <p><img class="ab" src="Imagem/Desenvagro-400l.png" alt="imagem DesenvAgro">
-        </p>        
-        <strong><nav><a href="index.html">DesenvAgro</a>&nbsp; &nbsp; &nbsp;    
-            <a href="serviçosprestados.html">Serviços prestados</a>&nbsp; &nbsp; &nbsp;
-            <a href="dicasagricolas.html">Dicas agrícolas</a>&nbsp; &nbsp; &nbsp;
-            <a href="faleconosco.html">Fale Conosco</a></nav></strong>
+        <p><img src="Imagem/Desenvagro-400l.png" alt="imagem DesenvAgro">
+        </p>             
+        <div>
+            <ul class="cab">
+             <li class="menu">
+                <a href="index.html">Início</a>
+            </li>  
+             <li class="menu">
+                <a href="serviçosprestados.html">Serviços prestados</a>
+            </li> 
+             <li class="menu">
+            <div class="container cabeçalho">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu">
+                    <span class="span">Dicas agrícolas</span>
+                </label>
+                <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Gestão</a>
+                </li>
+                <li>
+                <a href="#" class="lista-menu__link">Solo</a>
+                </li>
+                </ul>                      
+            </div>   
+             </li>
+             <li class="menu"><a href="faleconosco.html">Fale Conosco</a></li>
+            </ul>        
+        </div>
             
     </header>
-    <main class="main">
-        <p>Prestamos serviços de:</h1>
-            <h2>
-                &bull; Interpretação de análise de solo; <br>
-                &bull; Análise de doenças e pragas em culturas agrícolas e pastagens;<br>
-                &bull; Avaliação de viabilidade econômica de propriedades rurais;<br>
-                &bull; Recomendação de adubação e calagem;<br>
-                &bull; Planejamento e confecção de projetos de irrigação;<br>
-                &bull; Recomendação de herbicidas para o controle de plantas daninhas.
-            </h2>
+    <main class="texto">
+        <p>Prestamos serviços de:</p>
+            <section>
+                <div class="prest">
+                 &bull; <img class="img_prest" src="imagem_serviçosprestados/solo.jpg" alt="imagem de solo"><p class="text_prest">Interpretação de análise de solo;</p> 
+                </div>
+                <div class="prest">
+                 &bull;<img class="img_prestf" src="imagem_serviçosprestados/doencas.jpg" alt="doença de planta"><img class="img_prest" src="imagem_serviçosprestados/praga.jpg" alt="lagarta se alimentando"><p class="text_prest">Análise de doenças e pragas em culturas agrícolas e pastagens;</p>
+                </div>
+                <div class="prest">
+                 &bull;<img class="img_prest" src="imagem_serviçosprestados/Foto_logo_DEGRAOEMGRAO_plantascrescendo.jpeg" alt="imagem de planta crescendo e aumentando a receita"><p class="text_prest">Avaliação de viabilidade econômica de propriedades rurais;</p>
+                </div>
+                <div class="prest">
+                 &bull;<img class="img_prest" src="imagem_serviçosprestados/adubacao.jpg" alt="Adubação de planta"><p class="text_prest">Recomendação de adubação e calagem;</p>
+                </div>
+                <div class="prest">
+                 &bull;<img class="img_prest" src="imagem_serviçosprestados/irrigacao_trator.jpg" alt="Imagem de irrigação"><p class="text_prest">Planejamento e confecção de projetos de irrigação;</p>
+                </div>
+                <div class="prestf">
+                 &bull;<p class="text_prest">Recomendação de herbicidas para o controle de plantas daninhas.</p> 
+                </div>
+            </section>
     </main>
+    <!-- 
     <p>Nossos preços</p>
     <section>
        <table>
@@ -76,10 +113,11 @@
             </tr>           
         </tbody>
        </table>
+    -->
     </section>
     <footer>
         <div class="pe">
-         <img src="Imagem/novo_simbolo (1).png" alt="logo da barbearia Alura" class="imgrodape">
+         <img src="Imagem/novo_simbolo (1).png" alt="Logo DesenvAgro" class="imgrodape">
          <p class="copyr">&copy; Copyright DesenvAgro - 2022</p>
         </div>        
      </footer> 

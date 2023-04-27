@@ -1,0 +1,39 @@
+.paragrafo_intro {
+    margin-top: 290px;
+}
+ 
+.texto {
+    margin-top: 16.5vh;
+}
+
+.prest {
+    display: flex;
+    margin: 2vh 0 1vh 0;
+}
+
+.img_prest {
+   width: 30%;
+   margin: 0.5vh 0vh 0.5vh 1vh;
+}
+
+.img_prestf {
+   width: 15%;
+   margin: 0.5vh 0vh 0.5vh 1vh;
+}
+
+.text_prest {
+    margin: auto 1vh auto 1vh;
+    font-size: 3.0vh;
+}
+
+.prestf {
+    margin: 0.5vh 1vh 10vh 0;
+}
+
+ @media screen and (min-width: 1024px) {
+ 
+ }
+ 
+ @media screen and (min-width: 1728px) {
+ 
+ }

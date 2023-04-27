@@ -7,29 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Imagem/favicon-16x16.png" type="image/x-icon">
     <title>DesenvAgro</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="CSS/index.css">  
 </head>
 <body>
     <header>
-        <p class="inicio">Bem-vindo ao <br>
-            <img src="Imagem/Desenvagro-400l.png" alt="imagem DesenvAgro">
-        </p> 
-    <strong>
-        <nav><a href="index.html">DesenvAgro</a>&nbsp; &nbsp; &nbsp;     
-            <a href="serviçosprestados.html">Serviços prestados</a>&nbsp; &nbsp; &nbsp;
-            <a href="dicasagricolas.html">Dicas agrícolas</a>&nbsp; &nbsp; &nbsp;
-            <a href="faleconosco.html">Fale Conosco</a></nav>
-        </strong>                             
+        <p class="inicio">Bem-vindo ao  
+       </p> <img src="Imagem/Desenvagro-400l.png" alt="imagem DesenvAgro">
+        <div>
+            <ul class="cab">
+             <li class="menu"><a href="index.html">Início</a> </li>  
+             <li class="menu"><a href="serviçosprestados.html">Serviços prestados</a></li> 
+             <li class="menu">
+            <div class="container cabeçalho">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu"><span class="span">Dicas agrícolas</span></label>
+                <ul class="lista-menu">
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Gestão</a></li>
+                <li>
+                <a href="#" class="lista-menu__link">Solo</a>
+                </li>
+                </ul>                      
+            </div>   
+             </li>
+             <li class="menu"><a href="faleconosco.html">Fale Conosco</a></li>
+            </ul>        
+        </div>         
     </header>
-<main>    
+<main class="text">    
 <h1>Nosso foco é consultoria e gestão agrícola</h1>
-
-    CONSULTORIA AGRONOMICA
-Prestamos serviços de assistência técnica agronomica, para produtores de diversos segmentos agropecuários. Visamos um atendimento de qualidade com preços acessíveis e por conta desse fator não temos sede física. Pautamos nosso trabalho no pilar da gestão com foco em sustentabilidade, entendo aonde nossos clientes querem chegar e como podemos auxiliar ele a alcançar seus obetivos. 
-
-   Permita-nos lhe auxiliar nesse desafio de produzir alimentos e ter uma maior rentabilidade e lucro na sua propriedade rural.
-   
+    <article>    
+     <div class="index">
+     <img class="img-index" src="Imagem _index/millharal.jpg" alt="Plantio de milho">
+     <p class="index_texto">Prestamos serviços de assistência técnica agronomica, para produtores de diversos segmentos agropecuários. Visamos um atendimento de qualidade com preços acessíveis.</p>        
+     </div>  
+     <div class="index">
+     <p class="index_texto">Pautamos nosso trabalho no pilar da gestão com foco em sustentabilidade, entendo aonde nossos clientes querem chegar e como podemos auxiliar ele a alcançar seus obetivos.</p> <img class="img-index" src="Imagem _index/jovem-agricultor-cuidando-de-seu-negocio.jpg" alt="Jovem auxiliando na gestão do produtor rural.">       
+     </div>
+     <div class="index">
+     <img class="img-indexz" src="Imagem _index/colheita_berinjela.jpg" alt="Colheita berinjela">
+     <p class="index_texto">Permita-nos lhe auxiliar nesse desafio de produzir alimentos e ter uma maior rentabilidade e lucro na sua propriedade rural.</p>   
+     </div>   
+    </article>   
 </main>
 <article>
     Nascemos do meio rural, para o meio rural. 
