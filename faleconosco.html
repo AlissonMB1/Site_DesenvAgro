@@ -20,7 +20,7 @@
                 <a href="index.html">Início</a>
             </li>  
              <li class="menu">
-                <a href="serviçosprestados.html">Serviços prestados</a>
+                <a href="serviçosprestados.html">Serviços prestados</a> 
             </li> 
              <li class="menu">
             <div class="container cabeçalho">
@@ -29,35 +29,46 @@
                     <span class="span">Dicas agrícolas</span>
                 </label>
                 <ul class="lista-menu">
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Gestão</a>
-                </li>
-                <li>
-                <a href="#" class="lista-menu__link">Solo</a>
-                </li>
-                </ul>                      
-            </div>   
-             </li>
-             <li class="menu"><a href="faleconosco.html">Fale Conosco</a></li>
-            </ul>        
+                    <li>
+                        <a href="Dicasagricolas/Controlededoenças.html" class="lista-menu__link">Controle de doenças de plantas</a>
+                    </li>
+                    <li>
+                        <a href="Dicasagricolas/controledeinsetospragas.html" class="lista-menu__link">Controle de insetos praga</a>
+                    </li>
+                    <li>
+                        <a href="Dicasagricolas/Controledeplantasdaninhas.html" class="lista-menu__link">Controle de plantas daninhas</a>
+                    </li>
+                    <li>
+                        <a href="Dicasagricolas/fertilidadeeadubacao.html" class="lista-menu__link">Fertilidade e adubação</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="Dicasagricolas/Gestão.html" class="lista-menu__link">Gestão</a>
+                    </li>
+                    <li>
+                    <a href="Dicasagricolas/Solo.html" class="lista-menu__link">Solo</a>
+                    </li>
+                    <li>
+                        <a href="Dicasagricolas/nutricaodebovinos.html" class="lista-menu__link">NUtrição de bovinos</a>
+                        </li>
+                 </ul>      
         </div>
             
     </header>
     <main class="texto">
-        <form class="dados"> 
+        <!--<form class="dados"> 
             <label for="nomeesobrenome">Nome e sobrenome:</label>  
-            <input type="text" id="nomeesobrenome" class="input-padrao" required><br>
+            <input type="text" name="txtNomeesobrenome" id="nomeesobrenome" class="input-padrao" required><br>
 
             <label for="email">E-mail:</label>
-            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"><br>
+            <input type="email" name="txtEmail" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"><br>
 
             <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX"><br>
+            <input type="tel" name="txtTelefone" id="telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX"><br>
 
             <label for="mensagem">Mensagem:</label>
-            <textarea name="mensagem" id="Mensagem" cols="30" rows="10" class="input-padrao" required></textarea>
-            <div class="legend">
-                <fieldset>
+            <textarea name="txtMensagem" id="Mensagem" cols="30" rows="10" class="input-padrao" required></textarea>
+                       <div class="legend">
+                <fieldset name="txtPreferenciacontato">
                <legend>Como prefere o nosso contato?</legend>
 
                 <label for="radio-email"><input type="radio" name="contato" value="radio-email">E-mail:</label>
@@ -81,12 +92,12 @@
             
             <div class="marcador"> 
                 <label class="checkbox"for="novidade"><input type="checkbox" checked> Gostaria de receber as nossas novidasdes por e-mail?</label>
-            </div> 
-            <input type="submit" value="Enviar" class="enviar">
+            </div>  
+            <input type="submit" value="Enviar" class="enviar" onclick="ColetaDados(txtNomeesobrenome.value, txtEmail.value, txtTelefone.value, txtMensagem.value, txtPreferenciacontato.value)">-->
             
 
         </form>
-        <div>
+        <div class="icone">
             <p class="term">Sigam-nos nas nossas redes sociais:</p>
             <p class="term"> &bull;
                 <a href="https://www.instagram.com/alissonchuleta/?" target="blanck" rel="external">
@@ -113,5 +124,6 @@
         <p class="copyr">&copy; Copyright DesenvAgro - 2022</p>
        </div>        
     </footer> 
+    <script src="JS/faleconosco.js"></script>
 </body>
 </html>

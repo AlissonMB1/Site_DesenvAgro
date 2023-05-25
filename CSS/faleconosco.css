@@ -47,7 +47,19 @@
 }
 
  @media screen and (min-width: 1024px) {
- 
+.menu{
+margin: 0 auto 0 auto;
+}
+.texto{
+    margin-top: 12vh;
+}
+.ab{
+    width: 5vh;
+}
+.term{
+    font-size: 3vh;
+    margin-bottom: 2vh;
+}
  }
  
  @media screen and (min-width: 1728px) {

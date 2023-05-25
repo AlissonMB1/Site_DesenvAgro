@@ -31,9 +31,38 @@
 }
 
  @media screen and (min-width: 1024px) {
- 
+ .texto{
+    margin-top: 11vh;      
+ }
+ .pserv{
+    font-size: 2vh;
+ }
+ .text_prest{
+    font-size: 1.8vh;
+ }
  }
  
  @media screen and (min-width: 1728px) {
- 
+    header{
+        padding: 3.5vh;
+     }     
+     .inicio_img{
+        margin-top: -0.8vh;
+        width: 18vh;
+     }
+     .menu{
+        font-size: 1.7vh;
+        margin: 0 auto 0 -1vh;
+     }
+     .texto{
+        margin-top: 17vh;
+    }   
+     .pserv{
+        font-size: 2vh;
+     }
+     .text_prest{
+        font-size: 1.8vh;
+     }
+     
+
  }
